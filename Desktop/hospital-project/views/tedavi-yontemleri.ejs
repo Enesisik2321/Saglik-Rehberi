@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tedavi Yöntemleri</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-**********" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <%- include("partials/_header.ejs") %>
+    <div class="container mt-5">
+      <h1 class="mb-4">Tedavi Yöntemleri</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">İlaç Tedavisi</h5>
+              <p class="card-text">Birçok hastalık ilaçlarla tedavi edilebilir. İlaç tedavisi, semptomları hafifletmek
+                veya hastalığın altında yatan nedeni tedavi etmek için kullanılabilir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fiziksel Tedavi</h5>
+              <p class="card-text">Fiziksel tedavi, egzersizler, masaj, fizyoterapi gibi yöntemleri içerir. Kas-iskelet
+                sistemi rahatsızlıkları, yaralanmalar veya kronik ağrıların tedavisinde yaygın olarak kullanılır.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cerrahi Tedavi</h5>
+              <p class="card-text">Bazı hastalıkların tedavisi için cerrahi müdahale gerekebilir. Cerrahi tedavi,
+                hastalığın kök nedenini ortadan kaldırmak veya semptomları azaltmak için kullanılır.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Psikoterapi</h5>
+              <p class="card-text">Zihinsel sağlık sorunları, travmalar veya stresle başa çıkmak için psikoterapi
+                kullanılabilir. Bireysel, grup veya aile terapisi gibi çeşitli biçimleri vardır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <%- include("partials/_footer.ejs") %>
+    </footer>
+
+    <style>
+      footer {
+        color: #ffffff;
+      }
+
+      ul {
+        padding: 0px;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 0px;
+      }
+
+      .social-icon {
+        padding: 0;
+        margin-bottom: 0px;
+        float: right;
+      }
+
+      .social-icon li {
+        list-style: none;
+        display: inline-block;
+      }
+
+      .social-icon li i {
+        font-size: 14px;
+        color: #262725;
+        border: solid 2px #ffffff;
+        height: 31px;
+        width: 31px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 100px;
+        line-height: 27px;
+        margin-right: 15px;
+        transition: 1s;
+        background: #fff;
+      }
+
+      .social-icon li i:hover {
+        border: solid 2px #272525;
+        color: #ffffff;
+        background: #262725;
+      }
+
+      .phone-no i {
+        position: relative;
+        margin-right: 14px;
+        font-size: 43px;
+        top: 5px;
+      }
+
+      .phone-no {
+        margin-top: -22px;
+        text-align: right;
+      }
+
+      .footer-day-time {
+        padding-bottom: 30px;
+        border-bottom: 2px solid #7a6f6f;
+        padding-top: 14px;
+        margin-bottom: 55px;
+      }
+
+      .footer-day-time ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      .footer-day-time ul li:last-child {
+        margin-right: 0px;
+      }
+
+      .phone-no a {
+        color: #fff;
+        font-family: PlayfairDisplay-Black;
+        font-size: 34px;
+        font-weight: bold;
+      }
+
+      .footer-top {
+        background: #292828;
+
+        padding: 30px 0;
+        /* Örneğin, yukarıdaki 50px 0 50px olan padding değerlerini 30px 0 olarak azaltabilirsiniz */
+
+      }
+
+      .footer-top h4 {
+        font-size: 19px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+
+      .footer-top p {
+        font-size: 13px;
+        line-height: 2;
+      }
+
+      footer p {
+        margin-bottom: 0;
+      }
+
+      .footer-logo {
+        display: block;
+        margin-bottom: 32px;
+      }
+
+      .address1 li {
+        list-style: none;
+        position: relative;
+        padding: 0px 0 14px 34px;
+        line-height: 26px;
+      }
+
+      ul.address1 span {
+        position: absolute;
+        width: 40px;
+        max-width: 40px;
+        left: 0;
+      }
+
+      .address1 li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      ul.address1 i {
+        width: 20px;
+        position: absolute;
+        left: 0px;
+        text-align: center;
+        font-size: 28px;
+        top: 0;
+      }
+
+      ul.address1 i.fa-envelope {
+        font-size: 18px;
+        top: 4px;
+      }
+
+      footer ul.social-icon {
+        float: left;
+      }
+
+      footer .social-icon li i:hover {
+        background: #000000;
+        border-color: #000000;
+      }
+
+      .footer-bottom {
+        background: #000000;
+        padding: 5px 0;
+      }
+
+      .footer-bottom ul li {
+        display: inline;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+
+      .footer-bottom ul li a {
+        color: #fff;
+      }
+
+      .footer-bottom ul {
+        float: right;
+      }
+
+      .footer-bottom ul li:last-child {
+        margin-right: 0;
+      }
+
+      .copyright {
+        font-size: 18px;
+      }
+
+      .footer-day-time ul li,
+      .address1 li {
+        margin-right: 10px;
+        /* İçerik öğeleri arasındaki margin değerlerini azaltabilirsiniz */
+      }
+    </style>
+
+</body>
+
+</html>
